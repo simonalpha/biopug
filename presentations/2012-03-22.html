@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Bio Programming Users Group - 22/03/2013</title>
+
+		<meta name="description" content="First meeting of BioPUG at University of Melbourne">
+		<meta name="author" content="Simon Belluzzo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Bio Programming Users Group</h1>
+					<h3>22/03/2013</h3>
+					<p>
+						<small><a>Simon Belluzzo</a></small>
+					</p>
+				</section>
+				<section>
+					<h2>Welcome!</h2>
+					<h3>Thank you all for coming</h3>
+				</section>
+				<section>
+					<h2>Who I am</h2>
+					<ul>
+						<li>MPhil student in the Hartland & Stinear labs</li>
+						<li>Working on <em>Legionella</em> genomics</li>
+						<li>I aim to teach you programming, not Python</li>	
+						<li>Hopefully set up a community of coders as well</li>
+					</ul>
+				</section>
+				<section>
+					<h2>What is programming?</h2>
+					<ul>
+						<li>Fundamentally, telling a computer what to do</li>
+						<li>In reality, have to figure out how to get the computer to do what you want</li>
+						<li>Ensuring the program actually does what you want it to do, consistently</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Why programming?</h2>
+					<ul>
+						<li>Consistency in repetition</li>
+						<li>Understand the underlying processes in programs you use</li>
+						<li>Sharpen problem-solving and critical thinking</li>
+						<li>Be lazy!</li>
+					</ul>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Parallels with science
+						- Abstraction
+						- Algorithms
+						- Implementations
+						- Reliability/Testability
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Abstraction
+						- Multiple layers of Abstraction
+						- Make things as simple as possible at each layer
+						- Have to maintain some awareness of the higher and lower layers, these may impact on your code
+					</script>
+				</section>
+				<section>
+					<h2>Why Python?</h2>
+					<ul>
+						<li>Easy to learn</li>
+						<li>Easy to understand</li>
+						<li>Can be used to explore, or to write programs</li>
+						<li>Abstracts away a lot of the difficult stuff</li>
+						<li>A lot of code easily available</li>
+						<li>Currently very popular in science</li>
+					</ul>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Why not Python?
+						- Not everything is a nail
+						- Can be slow
+						- Difficult to parallelize
+						- May need to intergrate with older code
+					</script>
+				</section>
+				<section>
+					<h2>How to think like a programmer</h2>
+					<small>The Basics</small>
+					<ul>
+						<li>How would I explain how to do this to a small child?</li>
+						<li>Be lazy! (Is there an easier way? Do I have to do this now?)</li>
+						<li>DON'T REPEAT YOURSELF (or anyone else, if you can avoid it)</li>
+						<li>Break it down into manageable chunks (abstract)</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Let's get our feet wet</h1>
+					<ul>
+						<li>Start a terminal - Windows:<br>
+							Start > Programs > Accessories > System Tools > Command Prompt</li>
+						<li>Start a terminal - Mac OS X:<br>
+							Applications > Utilities > Terminal</li>
+						<li>Linux/BSD/Something more obscure...<br>
+							I'm assuming you know how to get to terminal, if not, yell out</li>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: false,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
