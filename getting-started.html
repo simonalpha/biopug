@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head>
+<title>BioPUG - Getting Started Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/kickstart.js"></script>                                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />                          <!-- CUSTOM STYLES -->
+</head><body>
+
+<nav class="navbar">
+	<a class="hide-phone" id="logo" href="index.html"><span>Bio</span>PUG UniMelb</a>
+	<ul>
+		<li><a href="sessions.html">Sessions</a></li>
+		<li><a href="resources.html">Resources</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+	</ul>
+</nav>
+<div class="content grid">
+	<h3>Getting Started Guide</h3>
+	<div id="getting-started" >
+        <h4>Introduction</h4>
+            <p>It can be difficult learning a new skill, particularly something considered as 
+            different as programming. This is not helped if you have issues getting set up.
+            <br>
+            The goal of this guide is to provide a nice walkthrough, guiding you through installing
+            everything you need for participation in BioPUG sessions, or programming in Python in
+            general. If you have any issues, please feel free to contact 
+            <a href="mailto:s.belluzzo+biopug@student.unimelb.edu.au">me</a> for help.</p>
+        <h4>Installing Python</h4>
+            <p>There are many ways to install Python, most of which are very easy. We are focussing 
+            on scientific programming, and unfortunately many of the packages involved can be 
+            complicated to install yourself. To avoid issues and confusion, we are currently recommending
+            using the <a href="https://store.continuum.io/cshop/anaconda">Anaconda Python Distribution</a>,
+            from Continuum Analytics, specifically designed for working with data and scientific computing.
+            While a large download, it contains many useful packages we will be using, and allows easy 
+            installation of extra Python packages and modules.</p>
+            
+            <h5>Downloading the Anaconda Python Distribution</h5>
+                <p>Continuum Analytics has installers available for Windows, Mac OS X and Linux on their 
+                <a href="http://continuum.io/downloads.html">website</a>. Pick the appropriate installer
+                for your operating system. In most cases, you'll want the 64-bit version. You won't need any of
+                the other packages or add-ons for our sessions, or most programming you are likely to do.</p>
+            <h5>Installing the Anaconda Python Distribution</h5>
+                <p>Installation differs depending on the operating system you are on. Instructions for installation 
+                on Windows, Mac OS X and Linux can all be found on the 
+                <a href="http://docs.continuum.io/anaconda/install.html">Continuum Analytics website</a>. If asked 
+                whether you want Anaconda added to the system path, say yes. This allows you to run it from the
+                command line.</p>
+                <p>I've included extra notes below to aid in the install on Mac OS X and Linux.</p>
+                <h6>Mac OS X</h6>
+                <p>The Terminal application can be found in the Utilities directory in your Applications
+                directory.</p>
+                <h6>Linux</h6>
+                <p>The particular application you need to run can vary, depending on your environment.
+                However, look for menu items called "Terminal" or "Console", or various spellings of such,
+                as these are likely to be terminal programs.</p>
+            <h5>Checking the installation worked</h5>
+                <p>To confirm that we've installed Python correctly, open a terminal, either following the above
+                directions, or if on Windows, by opening the Command Prompt, in the Accessories directory in
+                the Start menu.</p>
+                <p>Once your terminal is opened, type "python" into it and press Enter. You should then see 
+                something like the prompt below.</p>
+                <!-- Code Python -->
+                <pre>
+                Python 2.7.4 |Anaconda 1.5.1 (x86_64)| (default, May  9 2013, 12:12:00)
+                [GCC 4.0.1 (Apple Inc. build 5493)] on darwin
+                Type "help", "copyright", "credits" or "license" for more information.
+                >>>
+                </pre>
+                <p>If you see the Python prompt shown above, congratulations, you're ready to go. If not,
+                contact me to help you.</p>
+
+        <h4>Installing a text editor</h4>
+            <p>A text editor is an important component of a programmer's toolkit. Why do you need a text editor? 
+            Well, Microsoft Word can't do everything, and in programming, it's not very helpful at all. A good 
+            text editor will highlight your syntax as you write, helping draw your eye to important parts. It
+            can also help autocomplete, based on things you've already typed in your program, helping to avoid
+            spelling mistakes that can make programs misbehave.</p>
+            <p>For beginners, we are recommending <a href="http://www.sublimetext.com/">Sublime Text</a>.
+            Download and install it in the usual way for your operating system.</p>
+</div>
+</div><!-- END GRID-->
+<div class="clear"></div>
+<div id="footer">This website was built with <a href="http://www.99lime.com">HTML KickStart</a> and is hosted with <a href="http://www.github.com">GitHub</a> Pages</div>
+</body></html>
